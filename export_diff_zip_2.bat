@@ -24,7 +24,7 @@ del %USERPROFILE%\git_diff\archive_2_aft_%TODAY%.zip
 
 rem ïœçXëO
 set RET_DIR=
-for /F "usebackq" %%i in (`git diff --name-only --diff-filter=DCMR %PARAM2% %PARAM1%`) do (
+for /F "usebackq" %%i in (`git diff --name-only --diff-filter=DCMR %PARAM1% %PARAM2%`) do (
   set RET_DIR=!RET_DIR! "%%i"
 )
 
